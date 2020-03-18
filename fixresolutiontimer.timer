@@ -1,0 +1,12 @@
+# This timer is not used but was one way to call the fixresolution service
+# Boot up happens after the machine starts (before a user logs in)
+# Startup happens after a user logs
+[Unit]
+Description=Runs the fixresolution.service 2 seconds after startup
+
+[Timer]
+OnStartupSec=2
+Unit=fixresolution.service
+
+[Install]
+WantedBy=default.target
