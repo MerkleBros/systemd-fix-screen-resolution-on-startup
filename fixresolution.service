@@ -1,8 +1,8 @@
 [Unit]
 Description=Fix startup screen resolution
 After=default.target
-StartLimitBurst=100
-StartLimitIntervalSec=5
+StartLimitBurst=30
+StartLimitIntervalSec=10 m
 
 [Service]
 Restart=on-failure

@@ -2,10 +2,10 @@
 # Boot up happens after the machine starts (before a user logs in)
 # Startup happens after a user logs
 [Unit]
-Description=Runs the fixresolution.service 2 seconds after startup
+Description=Runs the fixresolution.service 10 seconds after startup
 
 [Timer]
-OnStartupSec=2
+OnStartupSec=10
 Unit=fixresolution.service
 
 [Install]
